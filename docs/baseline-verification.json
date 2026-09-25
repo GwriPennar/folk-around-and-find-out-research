@@ -1,0 +1,86 @@
+{
+  "evidence_state": "local-classical",
+  "executed_at_utc": "2026-09-25T16:20:22.925908+00:00",
+  "input_sha256": "c39a805226b247e5e9a978aa87648931d217e4f09a60601da4ca98bb9a669113",
+  "manifest_sha256": "63bcfab170d0b504a1ccba0d81484b22749b03d51bd107b30b143beeacbfbe69",
+  "code_sha256": {
+    "__init__.py": "7d0e0d40dfe89ed028c0673d0de55c70943864d0ddb72946a8d620911495ff86",
+    "annealing.py": "9d5594abdc16912c2bb4502088bea0670b0dd8255b0df8f14a3e9986fcca8346",
+    "classical.py": "147a58e878ba8233ecbfba411e7f9934d6685bc06b87b3fe0ff6138e4911946d",
+    "records.py": "0c84ee0e3bdc523657f9b73c952ee00e45bcd775a0e1fa9534ad95e78ac6e3d3"
+  },
+  "python": "3.12.14",
+  "packages": {
+    "numpy": "2.3.5",
+    "scikit-learn": "1.7.2",
+    "matplotlib": "3.10.6",
+    "scipy": "1.18.1",
+    "threadpoolctl": "3.7.0"
+  },
+  "configuration": {
+    "k": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "seed": 42,
+    "n_init": 20,
+    "input": "already-standardised; no new scaling",
+    "pca_solver": "full",
+    "clustering_space": "16D"
+  },
+  "summary": {
+    "synthetic": false,
+    "backend": "classical",
+    "records": 48,
+    "dimensions": 16,
+    "variance": [
+      0.45377754995744524,
+      0.20402343551698351,
+      0.11963207007576376
+    ],
+    "scores": {
+      "2": {
+        "silhouette": 0.2504715942651184,
+        "reference_ari": 0.1245362401988908,
+        "inertia": 498.0850370301229
+      },
+      "3": {
+        "silhouette": 0.2642492696138751,
+        "reference_ari": 0.26521496370742603,
+        "inertia": 383.83304208882566
+      },
+      "4": {
+        "silhouette": 0.27093833922680216,
+        "reference_ari": 0.29820925660236997,
+        "inertia": 306.86216471425183
+      },
+      "5": {
+        "silhouette": 0.2631680066302369,
+        "reference_ari": 0.36461232604373756,
+        "inertia": 260.0348229638626
+      },
+      "6": {
+        "silhouette": 0.2754887868551297,
+        "reference_ari": 0.3655453181915577,
+        "inertia": 229.15641532818344
+      },
+      "7": {
+        "silhouette": 0.27921698262794664,
+        "reference_ari": 0.32711191065137546,
+        "inertia": 204.81623467346003
+      },
+      "8": {
+        "silhouette": 0.2691326297097527,
+        "reference_ari": 0.39381558920131376,
+        "inertia": 187.15093943316757
+      }
+    },
+    "saved_baseline_verified": true
+  },
+  "publication_note": "Aggregate verification only. Record-level inputs and replay output rows are withheld; not a public-data reproduction."
+}

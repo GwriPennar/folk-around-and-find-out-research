@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "name_term_hashes": [
+    "83e0b805a6ea68dff250dfe28723ff96ab7cf4218ccb84f1014177b83fe76040",
+    "ec5c41c127a484ebc9cc0b3ca294254623f11588ef3c71a3a148e1b19fbb79dd",
+    "cd7d6ad239cdc1e5104ef2bf983856a6f50ece4c2ae33424c47a38d7aedb66e4",
+    "2b2a0ff8f9def3f17d58512ab10d7b1b40e5ae06dabbddfd4d9278a428a3700c",
+    "f2051d2259f710968713ac3caddc1213727c67d994a5bf86e0b1e38da8be1bac",
+    "e985d908d05639e8a2e37270f3332f54dbe6b13037162ce3cb8f13c88680b3d2",
+    "c45edd6e5d147d35780f1b687460cfc1d2fe27ae66bdf03c4f9f2dba783b677e",
+    "a1df6dffb5e4869e2f750c4121219699b9f6d748d16b7118494d1f7dcf1585e5",
+    "42029ef215256f8fa9fedb53542ee6553eef76027b116f8fac5346211b1e473c"
+  ],
+  "files": [
+    ".gitattributes",
+    ".github/workflows/publication-check.yml",
+    ".gitignore",
+    "CITATION.cff",
+    "LICENSE",
+    "PUBLISHING.md",
+    "README.md",
+    "docs/Quantum-Assisted-Folk-Research.pdf",
+    "docs/annealing-model.md",
+    "docs/baseline-verification.json",
+    "docs/classical-baseline.md",
+    "docs/data-boundary.md",
+    "docs/evidence.md",
+    "docs/research-brief.md",
+    "examples/signed-graph.json",
+    "examples/signed-graph.manifest.json",
+    "examples/synthetic-vectors.json",
+    "examples/synthetic-vectors.manifest.json",
+    "folk_research/__init__.py",
+    "folk_research/annealing.py",
+    "folk_research/classical.py",
+    "folk_research/records.py",
+    "notebooks/research-journey.ipynb",
+    "requirements-dev.txt",
+    "requirements.txt",
+    "results/README.md",
+    "results/signed-graph/bqm.json",
+    "results/signed-graph/exact.csv",
+    "results/signed-graph/run.json",
+    "results/signed-graph/sa.csv",
+    "results/signed-graph/signed-graph.png",
+    "results/signed-graph/summary.json",
+    "results/synthetic-vectors/coordinates.csv",
+    "results/synthetic-vectors/k-comparison.csv",
+    "results/synthetic-vectors/loadings.csv",
+    "results/synthetic-vectors/pca.png",
+    "results/synthetic-vectors/run.json",
+    "results/synthetic-vectors/summary.json",
+    "tests/test_research.py",
+    "tools/build_brief.py",
+    "tools/check_publication.py",
+    "tools/local_manifest.py",
+    "tools/make_synthetic.py",
+    "tools/verify_release.py"
+  ],
+  "binary_sha256": {
+    "docs/Quantum-Assisted-Folk-Research.pdf": "1089ae812a40614a3873fed928554aed9c5aeaeff7fc70f9537f972807e03d14",
+    "results/signed-graph/signed-graph.png": "de9242d72f40ad459cda33100c407d64d7c4bcf62e128cda00ce026c0ed27bc1",
+    "results/synthetic-vectors/pca.png": "10cac0fb082eb80ebed1b555147a5838743fbff6a717543459c6f1fe6982cb3e"
+  },
+  "licence_exceptions": {
+    "LICENSE": {
+      "sha256": "80839736dcb0bd2a2bac2bc0cd90acc387e62c3cdeef27f640a1cd4cea75f8cf",
+      "rules": [
+        "team-name",
+        "personal-email"
+      ],
+      "reason": "Unmodified existing copyright or third-party licence attribution, not narrative/contact information."
+    }
+  }
+}
