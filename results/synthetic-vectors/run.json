@@ -1,0 +1,92 @@
+{
+  "evidence_state": "local-classical",
+  "executed_at_utc": "2026-09-25T16:18:11.709956+00:00",
+  "input_sha256": "45a1be98c9d4ab0a3956cfa03b5a7ce99f97874ce577dd24e204bf972c2acbfb",
+  "manifest_sha256": "564eb31c7963a38f5912eb9e49b5b635476225d009f96dc50e628ac7b1e36413",
+  "code_sha256": {
+    "__init__.py": "7d0e0d40dfe89ed028c0673d0de55c70943864d0ddb72946a8d620911495ff86",
+    "annealing.py": "9d5594abdc16912c2bb4502088bea0670b0dd8255b0df8f14a3e9986fcca8346",
+    "classical.py": "147a58e878ba8233ecbfba411e7f9934d6685bc06b87b3fe0ff6138e4911946d",
+    "records.py": "0c84ee0e3bdc523657f9b73c952ee00e45bcd775a0e1fa9534ad95e78ac6e3d3"
+  },
+  "python": "3.12.14",
+  "packages": {
+    "numpy": "2.3.5",
+    "scikit-learn": "1.7.2",
+    "matplotlib": "3.10.6",
+    "scipy": "1.18.1",
+    "threadpoolctl": "3.7.0"
+  },
+  "configuration": {
+    "k": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "seed": 42,
+    "n_init": 20,
+    "input": "already-standardised; no new scaling",
+    "pca_solver": "full",
+    "clustering_space": "16D"
+  },
+  "summary": {
+    "synthetic": true,
+    "backend": "classical",
+    "records": 48,
+    "dimensions": 16,
+    "variance": [
+      0.24271994053981846,
+      0.2167318636242473,
+      0.15106791740531858
+    ],
+    "scores": {
+      "2": {
+        "silhouette": 0.19119110497449268,
+        "reference_ari": 0.25396825396825395,
+        "inertia": 607.3689164583789
+      },
+      "3": {
+        "silhouette": 0.2550813991308852,
+        "reference_ari": 0.5436893203883495,
+        "inertia": 466.2404306692489
+      },
+      "4": {
+        "silhouette": 0.2780667701875284,
+        "reference_ari": 0.6594202898550725,
+        "inertia": 384.28882150049276
+      },
+      "5": {
+        "silhouette": 0.3072626886705232,
+        "reference_ari": 0.8065843621399177,
+        "inertia": 316.37428323683827
+      },
+      "6": {
+        "silhouette": 0.3296038339260033,
+        "reference_ari": 1.0,
+        "inertia": 253.90928635576313
+      },
+      "7": {
+        "silhouette": 0.3001591014650133,
+        "reference_ari": 0.9455388180764774,
+        "inertia": 239.06304879596647
+      },
+      "8": {
+        "silhouette": 0.26803026393602647,
+        "reference_ari": 0.8867469879518072,
+        "inertia": 227.36286450365355
+      }
+    },
+    "saved_baseline_verified": false
+  },
+  "output_sha256": {
+    "coordinates.csv": "b371f7d916ab027fde3fa13a1438cc7b695786a48e39e22332110d9c9a6795f7",
+    "k-comparison.csv": "891aae78cf7c3bf6f9927672177194e4ce1fb9bd4370ee0d46db77d56782d031",
+    "loadings.csv": "fe062b98a8c64c0fedfdac9b0431fb4c1b5c494be7837fe03c587c9a2fc80d6e",
+    "pca.png": "10cac0fb082eb80ebed1b555147a5838743fbff6a717543459c6f1fe6982cb3e",
+    "summary.json": "578f25a39c551867ad6f9c6f9f27be9b89128e36bf2c3253a4765f3f106aadff"
+  }
+}

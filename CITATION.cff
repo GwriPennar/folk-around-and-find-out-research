@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "Exploratory research software; no peer-reviewed paper or quantum advantage is implied."
+title: "Folk Around And Find Out"
+type: software
+authors:
+  - name: "Folk Around And Find Out research team"
+version: "0.1.0"
+date-released: 2026-09-25
+repository-code: "https://github.com/GwriPennar/folk-around-and-find-out-research"

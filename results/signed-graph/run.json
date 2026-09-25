@@ -1,0 +1,59 @@
+{
+  "evidence_state": "local-classical",
+  "executed_at_utc": "2026-09-25T16:18:10.132449+00:00",
+  "input_sha256": "fa2b057876577e20c283dded253b32f33428fada05f43c7066d4f7e80b43c890",
+  "manifest_sha256": "6fe88899412e2c7277423496c024ac0cc26748190363fd06041ff4470110c8c7",
+  "code_sha256": {
+    "__init__.py": "7d0e0d40dfe89ed028c0673d0de55c70943864d0ddb72946a8d620911495ff86",
+    "annealing.py": "9d5594abdc16912c2bb4502088bea0670b0dd8255b0df8f14a3e9986fcca8346",
+    "classical.py": "147a58e878ba8233ecbfba411e7f9934d6685bc06b87b3fe0ff6138e4911946d",
+    "records.py": "0c84ee0e3bdc523657f9b73c952ee00e45bcd775a0e1fa9534ad95e78ac6e3d3"
+  },
+  "python": "3.12.14",
+  "packages": {
+    "numpy": "2.3.5",
+    "scikit-learn": "1.7.2",
+    "matplotlib": "3.10.6",
+    "scipy": "1.18.1",
+    "threadpoolctl": "3.7.0"
+  },
+  "configuration": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "reads_per_seed": 64,
+    "sweeps": 100,
+    "temperature_start": 4.0,
+    "temperature_end": 0.05,
+    "sample_policy": "best-so-far per read"
+  },
+  "summary": {
+    "synthetic": true,
+    "backend": "classical-exact-and-simulated-annealing",
+    "assignments_verified": 64,
+    "optimum": 2,
+    "optimal_assignments": [
+      "000111",
+      "111000"
+    ],
+    "reads": 640,
+    "best_energy": 2.0,
+    "optimal_best_so_far_reads": 640
+  },
+  "output_sha256": {
+    "bqm.json": "c094d77f55d9bcd01e4c3e37600991975c9c66a4f67ae7d2f5079c026b4b2e70",
+    "exact.csv": "567366a196d0d0d2820074ce0f7d310126740deabee93e352393ec5817f47f89",
+    "sa.csv": "3ab5c6e6eac5ddc2d4c0c3be9e8a3b3593d16f00acb65a9f084566a5d5aa7ccc",
+    "signed-graph.png": "de9242d72f40ad459cda33100c407d64d7c4bcf62e128cda00ce026c0ed27bc1",
+    "summary.json": "bf1da49d7fe9f7c76c42ec8338e09b2add60300dd78a54f631b6426ea83423f0"
+  }
+}

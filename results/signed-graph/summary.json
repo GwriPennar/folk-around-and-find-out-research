@@ -1,0 +1,13 @@
+{
+  "synthetic": true,
+  "backend": "classical-exact-and-simulated-annealing",
+  "assignments_verified": 64,
+  "optimum": 2,
+  "optimal_assignments": [
+    "000111",
+    "111000"
+  ],
+  "reads": 640,
+  "best_energy": 2.0,
+  "optimal_best_so_far_reads": 640
+}

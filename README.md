@@ -1,25 +1,49 @@
-# Folk Around And Find Out — Research
+# Quantum-assisted discovery of related folk melodies
 
-Team 8's public research companion for musical similarity, unsupervised clustering and candidate quantum-assisted optimisation experiments.
+**A hybrid quantum-classical approach to musical similarity and clustering.**
 
-**Our question:** can we find related melodies without supplying their family labels to the model? We distinguish the quality of the musical representation from the performance of an optimiser. Current work is exploratory; no quantum advantage is claimed.
+Folk melodies change as people play, remember and adapt them. Finding related versions means weighing many similarities that can disagree. We investigate whether quantum annealing can help organise those relationships into useful groups, with classical computing preparing the musical evidence and evaluating the answers.
 
-## Explore
+This is research into **quantum-assisted unsupervised learning**, within the broad QML umbrella. Our specific quantum method is annealing for combinatorial optimisation. The examples executed in this release are classical; neither PCA nor classical simulated annealing is a quantum computation. We claim no quantum advantage.
 
-- [Research briefing website](https://folk-around-and-find-out.ark1v3.chatgpt.site/)
-- [Official NQCC UK Quantum Hackathon 2026 page](https://www.nqcc.ac.uk/uk-quantum-hackathon-2026/)
+## Why give this problem to a quantum annealer?
 
-## What is published here
+A resembles B, B resembles C, yet A and C may disagree. Pairwise scores alone do not select a consistent grouping. Assignments, competing relationships and constraints create a combinatorial search problem that can be expressed as a binary quadratic model. Quantum annealing is a candidate way to search that model; whether it helps is the experiment, not the premise.
 
-This repository begins with this overview. Selected research explanations, reproducible analysis and reviewed results will be added as they are ready. No datasets or executable research releases have been uploaded yet.
+**Our pipeline:** notation → classical features → similarity graph → optimisation model → classical / direct-QPU / managed-hybrid solver → constraint checks and musical review.
 
-The website implementation, private development notebooks, correspondence and development history remain in a separate private repository. This repository does not mirror or automatically deploy the website.
+Our overall hybrid workflow and D-Wave's managed hybrid solver service are different things. We will report direct-QPU and managed-hybrid experiments separately, with end-to-end costs and strong classical controls.
 
-## Keeping publication straightforward
+## Read the research
 
-1. Bring across only the files intended for public release; never copy the private repository history or a whole workspace archive.
-2. Review the diff for personal details, credentials, private links and local paths. Clear notebook outputs and inspect attachments and metadata.
-3. Check data redistribution rights and retain required licence notices. Review new datasets and PDFs/images before including them.
-4. Run the publication check on the proposed release, then use a normal pull request. Ordinary wording and code changes need no separate approval ceremony.
+- [Research brief](docs/research-brief.md): motivation, past formulations, evidence and next experiments.
+- [Download the PDF](docs/Quantum-Assisted-Folk-Research.pdf): self-contained research briefing.
+- [48-tune classical baseline](docs/classical-baseline.md): features, axes, K comparisons and local replay instructions.
+- [Synthetic annealing formulation](docs/annealing-model.md): all 64 assignments, QUBO equations and classical sampling.
+- [Evidence register](docs/evidence.md) and [data/publication boundary](docs/data-boundary.md).
+- [Immersive briefing](https://folk-around-and-find-out.ark1v3.chatgpt.site/) and [official NQCC event account](https://www.nqcc.ac.uk/uk-quantum-hackathon-2026/).
 
-The automated publication tooling is prepared privately and will be adapted for this research-only repository before the first research release. Website source is excluded from that release.
+## Run without private data or quantum access
+
+Python 3.12:
+
+```sh
+python -m venv .venv
+# Activate the environment using your shell's normal command.
+python -m pip install -r requirements.txt
+python -m unittest discover -s tests
+python -m folk_research.annealing --input examples/signed-graph.json --manifest examples/signed-graph.manifest.json --output-dir local-runs/graph-001
+python -m folk_research.classical --input examples/synthetic-vectors.json --manifest examples/synthetic-vectors.manifest.json --output-dir local-runs/vectors-001
+```
+
+Choose a new output directory for every run. Both supplied inputs are synthetic: six artificial graph nodes and 48 artificial 16D vectors. They are not melodies, musical-family evidence or a reproduction of the IrishMAN result. No credentials, network requests or provider calls are used by the analysis modules.
+
+The thin [research notebook](notebooks/research-journey.ipynb) calls the same modules. Install `requirements-dev.txt` for notebook execution and PDF tooling. Committed notebook outputs are cleared. Saved [example outputs](results/README.md) include figures, scores and hashed run records.
+
+The real 48-tune analysis was replayed locally. Record-level IrishMAN inputs are withheld pending clarification of redistribution terms; public readers can inspect the explanation and run the same replay code with authorised local inputs. See the exact distinction in the [baseline guide](docs/classical-baseline.md).
+
+## Research direction
+
+D-Wave is the primary quantum route. First establish useful musical evidence, then compare identical bounded optimisation problems using exact methods, strong classical solvers, classical simulated annealing, direct QPU and managed hybrid routes. Signed-graph grouping and paths of related songs are proposed extensions. IBM/Qiskit remains a separate project.
+
+Website implementation, player code, raw music, private research history and correspondence are excluded. See [PUBLISHING.md](PUBLISHING.md) for the short release process. The code's MIT licence does not grant rights to third-party datasets.

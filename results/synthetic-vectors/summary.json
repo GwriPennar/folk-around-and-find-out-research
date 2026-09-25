@@ -1,0 +1,49 @@
+{
+  "synthetic": true,
+  "backend": "classical",
+  "records": 48,
+  "dimensions": 16,
+  "variance": [
+    0.24271994053981846,
+    0.2167318636242473,
+    0.15106791740531858
+  ],
+  "scores": {
+    "2": {
+      "silhouette": 0.19119110497449268,
+      "reference_ari": 0.25396825396825395,
+      "inertia": 607.3689164583789
+    },
+    "3": {
+      "silhouette": 0.2550813991308852,
+      "reference_ari": 0.5436893203883495,
+      "inertia": 466.2404306692489
+    },
+    "4": {
+      "silhouette": 0.2780667701875284,
+      "reference_ari": 0.6594202898550725,
+      "inertia": 384.28882150049276
+    },
+    "5": {
+      "silhouette": 0.3072626886705232,
+      "reference_ari": 0.8065843621399177,
+      "inertia": 316.37428323683827
+    },
+    "6": {
+      "silhouette": 0.3296038339260033,
+      "reference_ari": 1.0,
+      "inertia": 253.90928635576313
+    },
+    "7": {
+      "silhouette": 0.3001591014650133,
+      "reference_ari": 0.9455388180764774,
+      "inertia": 239.06304879596647
+    },
+    "8": {
+      "silhouette": 0.26803026393602647,
+      "reference_ari": 0.8867469879518072,
+      "inertia": 227.36286450365355
+    }
+  },
+  "saved_baseline_verified": false
+}
